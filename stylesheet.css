@@ -1,0 +1,81 @@
+body { 
+    min-width: 570px; 
+    padding: 20px; 
+    font-family: 'Oswald', sans-serif; 
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+#message {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 20px; 
+    border: none;
+    color: white;
+    background-color: #c0392b;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button:hover {
+    background-color: #86291e; 
+}
+
+.input {
+    padding: 8px 15px;
+    margin-right: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #dddddd;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+h4 a {
+    color: #676767;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: #007BFF;
+    text-decoration: none;
+}

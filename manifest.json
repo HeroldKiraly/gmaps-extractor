@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Google Maps Extractor",
+    "version": "0.3",
+    "description": "Google Maps Extractor",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "icons": {
+      "16": "icon.svg",
+      "48": "icon.svg",
+      "128": "icon.svg"
+    }
+  }
+  
