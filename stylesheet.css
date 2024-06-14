@@ -1,7 +1,17 @@
+:root {
+    --white: rgb(254, 254, 255);
+    --richBlack: rgb(0, 16, 17);
+    --steelBlue: rgb(62, 124, 177);
+    --poppy: rgb(223, 41, 53);
+}
+
 body { 
     min-width: 570px; 
-    padding: 20px; 
-    font-family: 'Oswald', sans-serif; 
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--white);
+    color: var(--richBlack);
+    font-weight: bold;
 }
 
 .title {
@@ -12,7 +22,7 @@ body {
 }
 
 #message {
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-decoration: none;
@@ -21,16 +31,17 @@ body {
 .button {
     padding: 10px 20px; 
     border: none;
-    color: white;
-    background-color: #c0392b;
+    color: var(--white);
+    background-color: var(--steelBlue);
     cursor: pointer; 
     transition: background-color 0.3s ease; 
-    border-radius: 20px;
+    border-radius: 0px;
     font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 
 .button:hover {
-    background-color: #86291e; 
+    background-color: var(--poppy); 
 }
 
 .input {
@@ -67,15 +78,17 @@ h1 {
 
 h4 {
     margin: 0;
-    padding-top: 10px;
+    padding-top: 0px;
+    font-size: 0.8rem;
+    padding-left: 25px;
 }
 
 h4 a {
-    color: #676767;
+    color: var(--steelBlue);
     text-decoration: none;
 }
 
 h4 a:hover {
-    color: #007BFF;
+    color: var(--poppy);
     text-decoration: none;
 }

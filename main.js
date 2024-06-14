@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var actionButton = document.getElementById('actionButton');
         var downloadCsvButton = document.getElementById('downloadCsvButton');
         var resultsTable = document.getElementById('resultsTable');
-        var filenameInput = document.getElementById('filenameInput');
 
         if (currentTab && currentTab.url.includes("://www.google.com/maps/search")) {
             document.getElementById('message').textContent = "Let's scrape Google Maps!";
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             actionButton.style.display = 'none'; 
             downloadCsvButton.style.display = 'none';
-            filenameInput.style.display = 'none'; 
         }
 
         actionButton.addEventListener('click', function() {
@@ -68,12 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         downloadCsvButton.addEventListener('click', function() {
             var csv = tableToCsv(resultsTable); 
-            var filename = filenameInput.value.trim();
-            if (!filename) {
-                filename = 'google-maps-data.csv'; 
-            } else {
-                filename = filename.replace(/[^a-z0-9]/gi, '_').toLowerCase() + '.csv';
-            }
+            var filename = 'google-maps-data.csv';
             downloadCsv(csv, filename); 
         });
 
